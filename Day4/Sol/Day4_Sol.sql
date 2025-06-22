@@ -85,9 +85,7 @@ order by d.Dnum,e.Lname,e.Fname
 8. Try to get the max 2 salaries using subquery
 */
 
-select Salary
-from Employee
-where Salary in (select top 2 Salary from Employee order by Salary desc)
+select top 2 Salary from Employee order by Salary desc
 
 
 /*
